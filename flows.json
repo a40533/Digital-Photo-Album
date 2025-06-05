@@ -1,0 +1,1310 @@
+[
+    {
+        "id": "dd8fd1869dc8507c",
+        "type": "tab",
+        "label": "IoT-A interface",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9677b8c853b8102a",
+        "type": "tab",
+        "label": "IoT-B nterface",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c49410b8a1908fb6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqtt-dashboard.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "42118359068e0494",
+        "type": "ui_tab",
+        "name": "IoT-A",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6f473ef4f32137f4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "161119bd46e02d5b",
+        "type": "influxdb",
+        "hostname": "localhost",
+        "port": 8086,
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "timeout": "300",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "2bf8035e1de1b8ef",
+        "type": "ui_tab",
+        "name": "IoT-B",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "da9159978f0f60cd",
+        "type": "ui_group",
+        "name": "IoT-A",
+        "tab": "42118359068e0494",
+        "order": 1,
+        "disp": true,
+        "width": 23,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "8d171775284a3e2a",
+        "type": "ui_group",
+        "name": "Interface B",
+        "tab": "2bf8035e1de1b8ef",
+        "order": 1,
+        "disp": true,
+        "width": 23,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ecd3825a81e4efa6",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3cf204dd75c7297e",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b8aab0f3fd718c2e",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b227740b950ddb87",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b657ea3da6aa3a56",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7db84540224140ad",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b4bdf5e3ee477ca0",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f8589dbfab490457",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0af7208dd62ab7db",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0c962c74ae9cf00d",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5622ba509218fb54",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 13,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "fa0437e103abac41",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 14,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "360c177c45129635",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7d4c6f64e717553f",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6ff6694eca2b4e4e",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "da1e015c41f732ba",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0281a6fa1603b463",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a7b34544417f0071",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 20,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9574eb18ca349754",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f400679951454fe7",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 22,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0f4a0d44259f7696",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "22c531caeaa783b9",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 24,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "be0205265f7b4ed0",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "eb6e5c31c0a1dd8f",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 26,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "eb6a616cebf45b77",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 27,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e80a64f6deb39924",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 28,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "83343ad5152b6021",
+        "type": "ui_spacer",
+        "z": "dd8fd1869dc8507c",
+        "name": "spacer",
+        "group": "da9159978f0f60cd",
+        "order": 29,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f86c4aca9d99bfd7",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "354a16490307b2a6",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c0d07bf7c0fbfbe3",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "abd05667796506b9",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b1f378d9b1e349ff",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "06067a9dae0d88d3",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "56583a92f683d335",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "15d5d4b13f68ed2c",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e48dd5d13e75dd7a",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 13,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3f4f76bf02274a7d",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fe9b5232a9a5cf92",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 15,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d1b8a96dfc0abf94",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4f8072fcabfe43ed",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "58ed3820c84c076b",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "32a242c8cee21cac",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "af407d1ad3274c02",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d38c722f9701ac66",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 21,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "92f1eda372cacacc",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "440dc3a86c6447ae",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3216e49c3a01f62f",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "25fb7b7df640a8de",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "31aa4296d190c89a",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "596f74e28c12abb8",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 27,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "11f9b6521fe47c17",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 28,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8d0b614bb2eb4d7d",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 29,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "3650580435fd5381",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 30,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "936f78af99066f8d",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 31,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "bee9db4986d7a4fa",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2434048959b6b0eb",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 33,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "d6c957e0f1110ef9",
+        "type": "ui_spacer",
+        "z": "9677b8c853b8102a",
+        "name": "spacer",
+        "group": "8d171775284a3e2a",
+        "order": 34,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0e50eda5e1bd891a",
+        "type": "mqtt out",
+        "z": "dd8fd1869dc8507c",
+        "name": "Topic: Project IoT",
+        "topic": "Project IoT",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c49410b8a1908fb6",
+        "x": 730,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "65a5f6c43e5dbf7a",
+        "type": "ui_webcam",
+        "z": "dd8fd1869dc8507c",
+        "name": "WebCam",
+        "group": "da9159978f0f60cd",
+        "order": 2,
+        "width": 9,
+        "height": 7,
+        "countdown": false,
+        "autoStart": false,
+        "hideCaptureButton": false,
+        "showImage": "2",
+        "mirror": true,
+        "format": "jpeg",
+        "x": 80,
+        "y": 40,
+        "wires": [
+            [
+                "8367f18e5308e7a2"
+            ]
+        ]
+    },
+    {
+        "id": "8367f18e5308e7a2",
+        "type": "base64",
+        "z": "dd8fd1869dc8507c",
+        "name": "",
+        "action": "",
+        "property": "payload",
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "1b3b21482bfb4b36"
+            ]
+        ]
+    },
+    {
+        "id": "1b3b21482bfb4b36",
+        "type": "function",
+        "z": "dd8fd1869dc8507c",
+        "name": "function 6",
+        "func": "// Armazena a imagem base64 no contexto de fluxo\nflow.set(\"imagemBase64\", msg.payload);\n\n// Continua com a imagem para o template\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "fe19d8f72f813be8"
+            ]
+        ]
+    },
+    {
+        "id": "4c7336a909c6cefc",
+        "type": "function",
+        "z": "dd8fd1869dc8507c",
+        "name": "function 7",
+        "func": "if (msg.payload === null) {\n  // Limpar variáveis globais no fluxo\n  flow.set(\"imagemBase64\", null);\n  flow.set(\"description\", null);\n  return null; // não envia msg adiante\n}\n\nif (msg.payload.imagem) {\n  flow.set(\"imagemBase64\", msg.payload.imagem);\n}\nif (msg.payload.descricao) {\n  flow.set(\"description\", msg.payload.descricao);\n}\n\nreturn msg; // envia para MQTT OUT ou outro destino\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 40,
+        "wires": [
+            [
+                "0e50eda5e1bd891a"
+            ]
+        ]
+    },
+    {
+        "id": "fe19d8f72f813be8",
+        "type": "ui_template",
+        "z": "dd8fd1869dc8507c",
+        "group": "da9159978f0f60cd",
+        "name": "Imagem da Webcam",
+        "order": 4,
+        "width": 9,
+        "height": 10,
+        "format": "<style>\n  /* Força o tamanho dos botões, ignorando o CSS padrão do Angular Material */\n  md-button.custom-button {\n    width: 120px !important;\n    height: 40px !important;\n    min-width: 120px !important;\n    line-height: 40px !important;\n    font-size: 16px !important;\n    padding: 0 10px !important;\n    display: inline-block !important;\n  }\n\n  .button-container {\n    text-align: center;\n    margin-top: 20px;\n  }\n\n  .button-container md-button+md-button {\n    margin-left: 20px;\n  }\n</style>\n\n<div style=\"text-align: center;\">\n  <h3>Imagem da Webcam</h3>\n\n  <div\n    style=\"width: 300px; height: 300px; border: 1px solid #ccc; margin: 10px auto; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center;\">\n    <img ng-if=\"imagem\"\n         ng-src=\"{{'data:image/jpeg;base64,' + imagem}}\"\n         alt=\"Imagem da webcam\"\n         style=\"max-width: 100%; max-height: 100%; object-fit: contain;\" />\n  </div>\n\n  <div style=\"margin-top: 15px;\">\n    <input type=\"text\" id=\"descriptionInput\" placeholder=\"Digite uma descrição...\" ng-model=\"descricao\" style=\"width: 80%; padding: 5px;\" />\n  </div>\n\n  <div class=\"button-container\">\n    <md-button class=\"md-raised md-primary custom-button\" ng-click=\"enviar()\">\n      Send\n    </md-button>\n    <md-button class=\"md-raised custom-button\" ng-click=\"descartar()\">\n      Discart\n    </md-button>\n  </div>\n</div>\n\n<script>\n  (function(scope) {\n    scope.$watch('msg.payload', function(payload) {\n      if (payload) {\n        scope.imagem = payload;\n      } else {\n        scope.imagem = null;\n      }\n      scope.descricao = \"\";\n    });\n\n    scope.enviar = function() {\n      scope.send({\n        payload: {\n          imagem: scope.imagem,\n          descricao: scope.descricao || \"\"\n        }\n      });\n      scope.descricao = \"\";\n      scope.imagem = null;\n    };\n\n    scope.descartar = function() {\n      scope.descricao = \"\";\n      scope.imagem = null;\n      scope.send({ payload: null });\n    };\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 420,
+        "y": 100,
+        "wires": [
+            [
+                "4c7336a909c6cefc"
+            ]
+        ]
+    },
+    {
+        "id": "88d26e1bc09054d0",
+        "type": "mqtt in",
+        "z": "9677b8c853b8102a",
+        "name": "Topic: Project IoT",
+        "topic": "Project IoT",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c49410b8a1908fb6",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 100,
+        "y": 60,
+        "wires": [
+            [
+                "de12abe1f0e0a32b",
+                "a58c40bd865fe72e"
+            ]
+        ]
+    },
+    {
+        "id": "f202427937858615",
+        "type": "function",
+        "z": "9677b8c853b8102a",
+        "name": "function 6",
+        "func": "var newMsg = [\n  {\n    measurement: \"fotos\",\n    fields: {\n      imagem: msg.payload.imagem,\n      descricao: msg.payload.descricao\n    },\n    \n  }\n];\n\nreturn { payload: newMsg };\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 60,
+        "wires": [
+            [
+                "e6adbc6ed08dd4a3"
+            ]
+        ]
+    },
+    {
+        "id": "9713b8f1da07a08b",
+        "type": "ui_template",
+        "z": "9677b8c853b8102a",
+        "group": "8d171775284a3e2a",
+        "name": "Template to B",
+        "order": 8,
+        "width": 8,
+        "height": 10,
+        "format": "<div style=\"text-align: center;\">\n    <h3>New Picture recived</h3>\n\n    <!-- Área da imagem com tamanho fixo -->\n    <div style=\"width: 300px; height: 300px; border: 1px solid #ccc; margin: 0 auto;\">\n        <img ng-if=\"imagemAtual\"\n         ng-src=\"{{'data:image/jpeg;base64,' + imagemAtual}}\"\n         style=\"width: 100%; height: 100%; object-fit: contain;\" />\n    </div>\n\n    <!-- Descrição -->\n    <p ng-if=\"descricaoAtual\" style=\"margin-top: 10px;\">\n        <strong>Descrição:</strong> {{descricaoAtual}}\n    </p>\n\n    <!-- Botões -->\n    <div style=\"margin-top: 15px;\">\n        <md-button class=\"md-raised md-primary\" ng-click=\"mostrarImagemGuardada()\"\n            style=\"min-width: 150px; margin-right: 10px;\">\n            Diplay New picture\n        </md-button>\n        <md-button class=\"md-raised\" ng-click=\"resetarVisualizacao()\" style=\"min-width: 150px;\">\n            Save\n        </md-button>\n    </div>\n</div>\n\n<script>\n    (function(scope) {\n  // Quando nova msg chega, atualiza imagem e descrição + salva backup\n  scope.$watch('msg.payload', function(payload) {\n    if (payload && payload.imagem) {\n      scope.imagemAtual = payload.imagem;\n      scope.descricaoAtual = payload.descricao || \"\";\n\n      // Salva como imagem guardada (persistente local no template)\n      scope.imagemGuardada = payload.imagem;\n      scope.descricaoGuardada = payload.descricao || \"\";\n    }\n  });\n\n  // Botão: mostra imagem guardada\n  scope.mostrarImagemGuardada = function() {\n    if (scope.imagemGuardada) {\n      scope.imagemAtual = scope.imagemGuardada;\n      scope.descricaoAtual = scope.descricaoGuardada;\n    }\n  };\n\n  // Botão: resetar a imagem atual (sem apagar a guardada)\n  scope.resetarVisualizacao = function() {\n    scope.imagemAtual = null;\n    scope.descricaoAtual = \"\";\n  };\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 460,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de12abe1f0e0a32b",
+        "type": "function",
+        "z": "9677b8c853b8102a",
+        "name": "function 7",
+        "func": "// Verifica se o payload é uma string JSON e faz o parse\nif (typeof msg.payload === 'string') {\n    try {\n        msg.payload = JSON.parse(msg.payload);\n    } catch (e) {\n        node.error(\"Erro ao fazer parse do JSON\", msg);\n        return null;\n    }\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 60,
+        "wires": [
+            [
+                "9713b8f1da07a08b",
+                "f202427937858615",
+                "7f869ae6231088ce"
+            ]
+        ]
+    },
+    {
+        "id": "e97e1a05e8733e74",
+        "type": "ui_button",
+        "z": "9677b8c853b8102a",
+        "name": "View Images",
+        "group": "8d171775284a3e2a",
+        "order": 3,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "label": "View Images",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "18bb0eca7413f78d",
+                "a58c40bd865fe72e"
+            ]
+        ]
+    },
+    {
+        "id": "7278e402fc31f1ba",
+        "type": "function",
+        "z": "9677b8c853b8102a",
+        "name": "Extract Image and Description",
+        "func": "let dados = msg.payload;\nlet margemMs = 1000; // margem de 1 segundo\nlet agrupados = [];\n\nfor (let i = 0; i < dados.length; i++) {\n    let entrada = dados[i];\n    let tEntrada = new Date(entrada._time).getTime();\n\n    // Busca um grupo já existente com timestamp próximo\n    let grupo = agrupados.find(g => Math.abs(new Date(g._time).getTime() - tEntrada) <= margemMs);\n\n    if (!grupo) {\n        grupo = { _time: entrada._time };\n        agrupados.push(grupo);\n    }\n\n    if (entrada._field && entrada._value !== undefined) {\n        grupo[entrada._field] = entrada._value;\n    }\n}\n\n// Apenas grupos com pelo menos imagem ou descrição\nmsg.payload = agrupados.filter(g => g.imagem || g.descricao);\n\n// Ordenar do mais recente ao mais antigo\nmsg.payload.sort((a, b) => new Date(b._time) - new Date(a._time));\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "e895915c7e142e2c"
+            ]
+        ]
+    },
+    {
+        "id": "5251037262e90def",
+        "type": "debug",
+        "z": "9677b8c853b8102a",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e895915c7e142e2c",
+        "type": "ui_template",
+        "z": "9677b8c853b8102a",
+        "group": "8d171775284a3e2a",
+        "name": "",
+        "order": 6,
+        "width": 12,
+        "height": 14,
+        "format": "<ol>\n  <h3>List of Images with Descriptions:</h3>\n  <li ng-repeat=\"item in msg.payload\">\n    <div>\n      <h5>Image:</h5>\n      <div class=\"image-container\">\n        <img id=\"capturedImage\"\n             ng-src=\"data:image/jpeg;base64,{{item.imagem}}\"\n             style=\"max-width: 300px; max-height: 300px;\">\n      </div>\n      <h5>Description:</h5>\n      <p>{{ item.descricao }}</p>\n      <button ng-click=\"deleteImage(item._time, item.descricao)\">Delete</button>\n    </div>\n  </li>\n</ol>\n\n<script>\n(function(scope) {\n  scope.deleteImage = function(time, description) {\n    scope.send({\n      payload: {\n        action: 'delete',\n        _time: time,\n        descricao: description\n      }\n    });\n  };\n})(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 240,
+        "wires": [
+            [
+                "c24ab839e92f9642"
+            ]
+        ]
+    },
+    {
+        "id": "e6adbc6ed08dd4a3",
+        "type": "influxdb batch",
+        "z": "9677b8c853b8102a",
+        "influxdb": "161119bd46e02d5b",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "IPB",
+        "bucket": "Album",
+        "x": 750,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "18bb0eca7413f78d",
+        "type": "influxdb in",
+        "z": "9677b8c853b8102a",
+        "influxdb": "161119bd46e02d5b",
+        "name": "",
+        "query": "from(bucket: \"Album\")\n  |> range(start: -2d)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"fotos\")\n  |> filter(fn: (r) => r[\"_field\"] == \"imagem\" or r[\"_field\"] == \"descricao\")\n",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IPB",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "7278e402fc31f1ba"
+            ]
+        ]
+    },
+    {
+        "id": "a58c40bd865fe72e",
+        "type": "influxdb in",
+        "z": "9677b8c853b8102a",
+        "influxdb": "161119bd46e02d5b",
+        "name": "",
+        "query": "from(bucket: \"Album\")\n  |> range(start: 0)  // Desde o início do tempo\n  |> filter(fn: (r) => r[\"_measurement\"] == \"fotos\")\n  |> filter(fn: (r) => r[\"_field\"] == \"imagem\")\n  |> count()\n",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "IPB",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "fc886b75b0922ae3"
+            ]
+        ]
+    },
+    {
+        "id": "6cfa530a82615b16",
+        "type": "ui_toast",
+        "z": "9677b8c853b8102a",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 770,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "fc886b75b0922ae3",
+        "type": "function",
+        "z": "9677b8c853b8102a",
+        "name": "function 10",
+        "func": "if (msg.payload && msg.payload.length > 0 && msg.payload[0]._value !== undefined) {\n    let total = msg.payload[0]._value;\n\n    if (total >= 4) {  // ajuste o limite conforme desejar\n        let alertaObj = {\n            alerta: true,\n            texto: `📸 Alerta: Já existem ${total} fotos\n             Armazenamento Quase cheio.\n             Apagar fotos`\n        };\n\n        let alertaMsg = Object.assign({}, msg);\n        alertaMsg.payload = alertaObj.texto;  // só texto para a notificação\n\n        let debugMsg = Object.assign({}, msg);\n        debugMsg.payload = alertaObj;  // objeto completo para debug\n\n        return [alertaMsg, debugMsg];\n    } else {\n        let infoObj = {\n            alerta: false,\n            texto: `Total atual de fotos: ${total}`\n        };\n\n        let infoMsg = Object.assign({}, msg);\n        infoMsg.payload = infoObj.texto;  // só texto para notificação\n\n        let debugMsg = Object.assign({}, msg);\n        debugMsg.payload = infoObj;  // objeto completo para debug\n\n        return [null, debugMsg];\n    }\n}\nreturn null;\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "6cfa530a82615b16"
+            ],
+            [
+                "97787b49fa8a03cb"
+            ]
+        ]
+    },
+    {
+        "id": "97787b49fa8a03cb",
+        "type": "ui_template",
+        "z": "9677b8c853b8102a",
+        "group": "8d171775284a3e2a",
+        "name": "Notification",
+        "order": 1,
+        "width": 8,
+        "height": 2,
+        "format": "<div ng-if=\"msg.payload.alerta\">\n  <p style=\"color:red; font-weight:bold;\">{{msg.payload.texto}}</p>\n</div>\n<div ng-if=\"!msg.payload.alerta\">\n  <p style=\"color:gray;\">Nenhum alerta no momento.</p>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 770,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c24ab839e92f9642",
+        "type": "function",
+        "z": "9677b8c853b8102a",
+        "name": "function 1",
+        "func": "if (msg.payload && msg.payload.action === 'delete') {\n    let fotoID = msg.payload._time;\n\n    let startTime = fotoID;\n    let stopTime = new Date(new Date(fotoID).getTime() + 1).toISOString();\n\n    msg.payload = {\n        start: startTime,\n        stop: stopTime\n    };\n\n    return msg;\n}\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "467c23f65011f026"
+            ]
+        ]
+    },
+    {
+        "id": "2b33099d5dc3f5b6",
+        "type": "function",
+        "z": "9677b8c853b8102a",
+        "name": "function 3",
+        "func": "// Se a resposta for string JSON, tenta converter\ntry {\n    if (typeof msg.payload === 'string' && msg.payload.startsWith('{')) {\n        msg.payload = JSON.parse(msg.payload);\n    }\n} catch (err) {\n    node.warn(\"Erro ao converter JSON: \" + err.message);\n}\n\n// Se for array, passa para a segunda saída (exibir fotos)\nif (Array.isArray(msg.payload)) {\n    return [null, msg];\n}\n\n// Se for objeto de erro ou sucesso\nif (msg.payload && msg.payload.code === 'unauthorized') {\n    msg.payload = \"❌ Erro: Acesso não autorizado para deletar.\";\n} else if (msg.statusCode === 204 || msg.statusCode === 200) {\n    msg.payload = \"🗑️ Foto deletada com sucesso!\";\n} else {\n    msg.payload = `❌ Erro desconhecido: ${JSON.stringify(msg.payload)}`;\n}\n\n// Envia para a primeira saída (mensagem de status)\nreturn [msg, null];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "6cfa530a82615b16"
+            ]
+        ]
+    },
+    {
+        "id": "467c23f65011f026",
+        "type": "http request",
+        "z": "9677b8c853b8102a",
+        "name": "Excluir Foto",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8086/api/v2/delete?org=IPB&bucket=Album",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Authorization",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "Token r64VINOX2uZuVjWLnfrLZTe3nTHfsG-Bw61MtHwgCrpbvm_HQh_iwKy1-OsdjMNPUmK2CUYgDXJAbNx_RBw-kw=="
+            },
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "application/json",
+                "valueValue": ""
+            }
+        ],
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "2b33099d5dc3f5b6"
+            ]
+        ]
+    },
+    {
+        "id": "f759d282c0346a56",
+        "type": "send-message",
+        "z": "9677b8c853b8102a",
+        "name": "",
+        "chatId": "",
+        "message": "",
+        "config": "",
+        "parseMode": "md",
+        "schedule": "",
+        "replyTo": "",
+        "attributes": "",
+        "formattingEntities": "",
+        "linkPreview": false,
+        "file": [],
+        "thumb": "",
+        "forceDocument": false,
+        "clearDraft": false,
+        "buttons": "",
+        "silent": false,
+        "supportStreaming": false,
+        "noforwards": false,
+        "commentTo": "",
+        "topMsgId": "",
+        "x": 800,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f869ae6231088ce",
+        "type": "function",
+        "z": "9677b8c853b8102a",
+        "name": "function 5",
+        "func": "if (msg.payload && msg.payload.imagem) {\n    let descricao = msg.payload.descricao || \"(sem descrição)\";\n    \n    // Saída 1: ui_notification (texto puro)\n    let notificacao = {\n        payload: `📸 Nova foto recebida!\\n📝 Descrição: ${descricao}`\n    };\n\n    // Saída 2: ui_template visual (com campo alerta e texto)\n    let alertaTemplate = {\n        payload: {\n            alerta: true,\n            texto: `📸 Nova foto recebida!\\n📝 Descrição: ${descricao}`\n        }\n    };\n\n    return [notificacao, alertaTemplate];\n}\n\n// Caso não haja imagem, limpa visual\nlet limparAlerta = {\n    payload: {\n        alerta: false,\n        texto: \"\"\n    }\n};\n\nreturn [null, limparAlerta];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "6cfa530a82615b16"
+            ],
+            [
+                "97787b49fa8a03cb"
+            ]
+        ]
+    }
+]
